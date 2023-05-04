@@ -1,0 +1,62 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%; /* 横幅100% */
+  padding: 100px 0;
+  margin: 0 auto;
+  background-color:#ff00ff;
+  display: flex; /* Flexboxの利用 */
+  justify-content:flex-end;
+
+}
+header > :first-child {
+  margin-right: auto;
+}
+
+
+
+header > div {
+  flex-basis:140px;
+  height: 70px;
+  margin: 10px;
+  background-color: #ee82ee;
+}
+.main1 {
+  width: 300px; /* 横幅いっぱい */
+  height: 300px; /* 高さ300px */
+  background-color:#98fb98;
+
+}
+
+.main2 {
+  max-width: 700px;
+  flex-grow: 1;
+  height: 300px; /* 親の高さに揃える */
+  background-color:#32cd32;
+}
+
+main2 > div {
+   flex-basis:140px;
+  height: 70px;
+  margin: 10px;
+  background-color: ;
+}
+main {
+  width: 100%; /* 横幅840px */
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 子要素の横並び・中央寄せ */
+  margin: 0 auto; /* 中央寄せ（左右に余白がないとできない） */
+  background-color: pink;
+}
+
+
+footer {
+  width: 100%; /* 横幅いっぱい */
+  height: 120px; /* 高さ120px */
+  background-color:#1e90ff;
+}
